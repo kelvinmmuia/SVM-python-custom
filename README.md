@@ -3,12 +3,17 @@ A custom implementation of the SVM regression/classification algorithm for Linea
 
 ## Dataset source
 https://www.openml.org/search?type=data&status=active&id=46951
-
-## Results
 Dataset loaded: 2500 samples, 12 features.
 Target classes: ['CERCEVELIK' 'URGUP_SIVRISI'] mapped to [0 1]
 Features: ['Area', 'Perimeter', 'Major_Axis_Length', 'Minor_Axis_Length', 'Convex_Area', 'Equiv_Diameter', 'Eccentricity', 'Solidity', 'Extent', 'Roundness', 'Aspect_Ration', 'Compactness']
 Target: SeedType
+
+## Problem
+Classification problem with 2 categories, comparison between the highly optimized Sk-Learn SVM implementation and my custom implementation with a 10-fold cross-validation for all kernels. The metrics considered for comparison are Accuracy, Precision, and Sensitivity (Recall). The average value for each metric from the 10 folds is returned for comparison. The main script shows how the SVM and kernels modules are to be applied successfully.
+
+
+## Results
+
 
 ### --- Testing Kernel: LINEAR ---
   Fold 1/10 for kernel 'linear'...
