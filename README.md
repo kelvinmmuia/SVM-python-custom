@@ -2,11 +2,16 @@
 A custom implementation of the SVM regression/classification algorithm for Linear, RBF, Polynomial and Sigmoid Curves with AI assistance
 
 ## Dataset source
-https://www.openml.org/search?type=data&status=active&id=46951
-Dataset loaded: 2500 samples, 12 features.
-Target classes: ['CERCEVELIK' 'URGUP_SIVRISI'] mapped to [0 1]
-Features: ['Area', 'Perimeter', 'Major_Axis_Length', 'Minor_Axis_Length', 'Convex_Area', 'Equiv_Diameter', 'Eccentricity', 'Solidity', 'Extent', 'Roundness', 'Aspect_Ration', 'Compactness']
-Target: SeedType
+https://www.openml.org/search?type=data&status=active&id=46951   
+
+Dataset loaded: 2500 samples, 12 features.   
+
+Target classes: ['CERCEVELIK' 'URGUP_SIVRISI'] mapped to [0 1]    
+
+Features: ['Area', 'Perimeter', 'Major_Axis_Length', 'Minor_Axis_Length', 'Convex_Area', 'Equiv_Diameter', 'Eccentricity', 'Solidity', 'Extent', 'Roundness', 'Aspect_Ration', 'Compactness']    
+
+Target: SeedType   
+
 
 ## Problem
 Classification problem with 2 categories, comparison between the highly optimized Sk-Learn SVM implementation and my custom implementation with a 10-fold cross-validation for all kernels. The metrics considered for comparison are Accuracy, Precision, and Sensitivity (Recall). The average value for each metric from the 10 folds is returned for comparison. The main script shows how the SVM and kernels modules are to be applied successfully.
@@ -14,8 +19,7 @@ Classification problem with 2 categories, comparison between the highly optimize
 
 ## Results
 
-
-### --- Testing Kernel: LINEAR ---
+### Testing Kernel: LINEAR
   Fold 1/10 for kernel 'linear'...
   Fold 2/10 for kernel 'linear'...
   Fold 3/10 for kernel 'linear'...
@@ -27,7 +31,7 @@ Classification problem with 2 categories, comparison between the highly optimize
   Fold 9/10 for kernel 'linear'...
   Fold 10/10 for kernel 'linear'...
 
-### --- Testing Kernel: RBF ---
+### Testing Kernel: RBF
   Fold 1/10 for kernel 'rbf'...
   Fold 2/10 for kernel 'rbf'...
   Fold 3/10 for kernel 'rbf'...
@@ -39,7 +43,7 @@ Classification problem with 2 categories, comparison between the highly optimize
   Fold 9/10 for kernel 'rbf'...
   Fold 10/10 for kernel 'rbf'...
 
-### --- Testing Kernel: POLY ---
+### Testing Kernel: POLY
   Fold 1/10 for kernel 'poly'...
   Fold 2/10 for kernel 'poly'...
   Fold 3/10 for kernel 'poly'...
@@ -51,7 +55,7 @@ Classification problem with 2 categories, comparison between the highly optimize
   Fold 9/10 for kernel 'poly'...
   Fold 10/10 for kernel 'poly'...
 
-### --- Testing Kernel: SIGMOID ---
+### Testing Kernel: SIGMOID
   Fold 1/10 for kernel 'sigmoid'...
   Fold 2/10 for kernel 'sigmoid'...
   Fold 3/10 for kernel 'sigmoid'...
@@ -64,7 +68,7 @@ Classification problem with 2 categories, comparison between the highly optimize
   Fold 10/10 for kernel 'sigmoid'...
 
 
-### --- Overall Performance Comparison ---
+### Overall Performance Comparison
 | Kernel  | SVM Type | Avg Accuracy | Avg Precision | Avg Recall (Sensitivity) |
 |---------|----------|---------------|----------------|---------------------------|
 | linear  | Custom   | 0.8768        | 0.8966         | 0.8399                    |
