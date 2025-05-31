@@ -65,12 +65,14 @@ Classification problem with 2 categories, comparison between the highly optimize
 
 
 ### --- Overall Performance Comparison ---
-    Kernel SVM Type Avg Accuracy Avg Precision Avg Recall (Sensitivity)
-0   linear   Custom       0.8768        0.8966                   0.8399
-1   linear  Sklearn       0.8792        0.9032                   0.8374
-2      rbf   Custom       0.8844        0.9052                   0.8456
-3      rbf  Sklearn       0.8840        0.9051                   0.8447
-4     poly   Custom       0.8540        0.9424                   0.7409
-5     poly  Sklearn       0.8528        0.9412                   0.7394
-6  sigmoid   Custom       0.7884        0.7736                   0.7872
-7  sigmoid  Sklearn       0.7796        0.7744                   0.7630
+| Kernel  | SVM Type | Avg Accuracy | Avg Precision | Avg Recall (Sensitivity) |
+|---------|----------|---------------|----------------|---------------------------|
+| linear  | Custom   | 0.8768        | 0.8966         | 0.8399                    |
+| linear  | Sklearn  | 0.8792        | 0.9032         | 0.8374                    |
+| rbf     | Custom   | 0.8844        | 0.9052         | 0.8456                    |
+| rbf     | Sklearn  | 0.8840        | 0.9051         | 0.8447                    |
+| poly    | Custom   | 0.8540        | 0.9424         | 0.7409                    |
+| poly    | Sklearn  | 0.8528        | 0.9412         | 0.7394                    |
+| sigmoid | Custom   | 0.7884        | 0.7736         | 0.7872                    |
+| sigmoid | Sklearn  | 0.7796        | 0.7744         | 0.7630                    |
+
